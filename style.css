@@ -1,0 +1,474 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* navbar styling */
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    font-family: 'Secular One', sans-serif;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+.navbar.sticky{
+    padding: 10px 0;
+    background: #79d70f;
+}
+.max_width{
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 60px;
+}
+.navbar .max_width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    font-size: 42px;
+    color: white;
+    font-weight: 600;
+}
+.navbar .logo a span{
+    color: #79d70f;
+    transition: all 0.3s ease;
+}
+.navbar.sticky .logo a span{
+    color: white;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    color: white;
+    font-size: 25px;
+    margin-left: 35px;
+    margin-right: 20px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar .menu li a:hover{
+    color: #79d70f;
+}
+
+.navbar.sticky .menu li a:hover{
+    color: white;
+}
+
+/* all section styling */
+section{
+    padding: 120px 0;
+}
+section .title{
+    position: relative;
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    font-family: 'Secular One', sans-serif;
+}
+section .title::before{
+    content: "";
+    position: absolute;
+    width: 185px;
+    height: 3px;
+    background: black;
+    bottom: 0%;
+}
+
+section .title::after{
+    position: absolute;
+    bottom: -18px;
+    padding: 2px;
+    left: 50%;
+    background: none;
+    font-size: 20px;
+    transform: translateX(-50%);
+    color: #79d70f;
+}
+
+/* home section styling */
+.home{
+    display: flex;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('bg2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    font-family: 'Secular One', sans-serif;
+}
+
+.home .max_width{
+    margin: auto 0 auto 50px;
+}
+
+.home .home-content .text-1{
+    font-size: 25px;
+    margin-bottom: -14px;
+    word-spacing: 0.2rem;
+    margin-left: 4px;
+    font-weight: 300px;
+}
+.home .home-content .text-2{
+    font-size: 80px;
+    margin-left: -2px;
+    margin-bottom: -25px;
+}
+.home .home-content .text-3{
+    font-size: 40px;
+    margin: -12px 0px;
+    word-spacing: 0.1rem;
+    font-weight: 500px;
+}
+
+.home .home-content .text-3 span{
+    color: #79d70f;
+    font-weight: 500px;
+}
+
+.home .home-content a{
+    margin-top: 18px;
+    display: inline-block;
+    background: #79d70f;
+    color: white;
+    font-size: 21px;
+    padding: 13px;
+    border-radius: 6px;
+    border: 2px solid #79d70f;
+    transition: all 0.3s ease;
+}
+
+.home .home-content a:hover{
+    color: #79d70f;
+    background: none;
+}
+
+/* intro section styling */
+.intro{
+    color: white;
+    background : linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('introimg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.intro .title::after{
+    content: "who i am";
+}
+.intro .intro-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+.intro .intro-content .left{
+    width: 45%;
+}
+.intro .intro-content .left img{
+    height: 350px;
+    width: 350px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.intro .intro-content .right{
+    width: 52%;
+}
+
+.intro .intro-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+.intro .intro-content .right .text span{
+    color: #79d70f;
+}
+
+.intro .intro-content .right p{
+    font-family: 'Balsamiq Sans', cursive;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.intro .intro-content .right a{
+    font-family: 'Balsamiq Sans', cursive;
+    margin-top: 18px;
+    display: inline-block;
+    background: #79d70f;
+    color: white;
+    font-size: 21px;
+    padding: 13px;
+    border-radius: 10px;
+    border: 2px solid #79d70f;
+    transition: all 0.3s ease;
+}
+
+.intro .intro-content .right a:hover{
+    color: #79d70f;
+    background: none;
+    border-color: #79d70f;
+}
+
+/* skills section styling */
+.skills{
+    color: white;
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('skillsimg.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.skills .skills-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+.skills .title::after{
+    content: "what i know";
+}
+.skills .skills-content .coloum{
+    padding-left: 50px;
+    padding-top: 10px;
+    width: calc(50% - 30px);
+}
+.skills .skills-content .left .text{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-family: 'Balsamiq Sans', cursive;
+}
+.skills .skills-content .left p{
+    font-family: 'Balsamiq Sans', cursive;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.skills .skills-content .right{
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+.skills .skills-content .right .bars{
+    margin-bottom: 20px;
+}
+
+.skills .skills-content .right .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 100px;
+    margin-bottom: 5px;
+}
+
+.skills .skills-content .right span{
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.skills .skills-content .right .line{
+    height: 5px;
+    width: 84%;
+    background: lightgray;
+    position: relative;
+}
+
+.skills .skills-content .right .line::before{
+    content: "";
+    position: absolute;
+    padding-top: 1px;
+    height: 100%;
+    background: #79d70f;
+    left: 0;
+    top: 0;
+}
+
+.skills-content .right .c::before{
+    width: 90%;
+}
+.skills-content .right .cpp::before{
+    width: 90%;
+}
+.skills-content .right .html::before{
+    width: 80%;
+}
+.skills-content .right .css::before{
+    width: 70%;
+}
+.skills-content .right .js::before{
+    width: 75%;
+}
+
+.skills .skills-content .left a{
+    font-family: 'Balsamiq Sans', cursive;
+    margin-top: 18px;
+    display: inline-block;
+    background: #79d70f;
+    color: white;
+    font-size: 21px;
+    padding: 13px;
+    border-radius: 10px;
+    border: 2px solid #79d70f;
+    transition: all 0.3s ease;
+}
+
+.skills .skills-content .left a:hover{
+    color: #79d70f;
+    background: none;
+    border-color: #79d70f;
+}
+
+/* projects styling */
+.project{
+    font-family: 'Balsamiq Sans', cursive;
+    background: black;
+    color: white;
+}
+.project .title::after{
+    content: "what I did";
+}
+.project .carousel .card{
+    background: #222;
+    border-radius: 6px;
+    padding: 40px 35px;
+}
+.project .carousel .card img{
+    height: 200px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #79d70f;
+}
+.project .carousel .card .text{
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.project .carousel .card .text u{
+    color: #79d70f;
+}
+.project .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.project .carousel .card .box p{
+    width: 600px;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.project .carousel .card a{
+    font-family: 'Balsamiq Sans', cursive;
+    margin-top: 18px;
+    display: inline-block;
+    background: #79d70f;
+    color: white;
+    font-size: 21px;
+    padding: 13px;
+    border-radius: 10px;
+    border: 2px solid #79d70f;
+    transition: all 0.3s ease;
+}
+
+.project .carousel .card a:hover{
+    color: #79d70f;
+    background: none;
+    border-color: #79d70f;
+}
+
+/* contact styling */
+.contact{
+    font-family: 'Balsamiq Sans', cursive;
+    background: black;
+    color: white;
+}
+.contact .title::after{
+    content: "get to know better";
+}
+
+.contact .contact-content{
+    display: flex;
+    overflow-x: auto;
+    background: #222;
+    border-radius: 6px;
+}
+
+.contact .contact-content::-webkit-scrollbar{
+    width: 0;
+}
+
+.contact .contact-content .row{
+    background: white;
+    padding: 20px 79px;;
+    border-radius: 20px;
+    margin: 50px 30px;
+    border: 7px solid #79d70f;
+}
+
+.contact .contact-content .row .type{
+    color: black;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Balsamiq Sans', cursive;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact .contact-content img{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #222;
+}
+
+.contact .contact-content .row a{
+    font-family: 'Balsamiq Sans', cursive;
+    margin-top: 18px;
+    display: inline-block;
+    background: #79d70f;
+    color: white;
+    font-size: 21px;
+    padding: 13px;
+    border-radius: 10px;
+    border: 2px solid #79d70f;
+    transition: all 0.3s ease;
+    margin: 20px 30px;
+}
+
+.contact .contact-content .row a:hover{
+    color: #79d70f;
+    background: none;
+    border-color: #79d70f;
+}
+
+/* footer styling */
+
+footer{
+    font-family: 'Balsamiq Sans', cursive;
+    margin-top: 7px;
+    font-size: 25px;
+    text-align: center;
+}
+
+footer span{
+    padding-top: 20px;
+}
+
+footer a{
+    color: crimson;
+}
