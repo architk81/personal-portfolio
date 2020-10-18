@@ -1,4 +1,4 @@
-*{
+  *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -114,22 +114,30 @@ section .title::after{
     word-spacing: 0.2rem;
     margin-left: 4px;
     font-weight: 300px;
+    z-index: 2;
+    transition: 2s;
 }
 .home .home-content .text-2{
     font-size: 80px;
     margin-left: -2px;
     margin-bottom: -25px;
+    z-index: 2;
+    transition: 2s;
 }
 .home .home-content .text-3{
     font-size: 40px;
     margin: -12px 0px;
     word-spacing: 0.1rem;
     font-weight: 500px;
+    z-index: 2;
+    transition: 2s;
 }
 
 .home .home-content .text-3 span{
     color: #79d70f;
     font-weight: 500px;
+    z-index: 2;
+    transition: 2s;
 }
 
 .home .home-content a{
@@ -305,7 +313,10 @@ section .title::after{
     width: 70%;
 }
 .skills-content .right .js::before{
-    width: 75%;
+    width: 65%;
+}
+.skills-content .right .DSA::before{
+    width: 80%;
 }
 
 .skills .skills-content .left a{
@@ -346,7 +357,7 @@ section .title::after{
     width: 250px;
     object-fit: cover;
     border-radius: 50%;
-    border: 5px solid #79d70f;
+    box-shadow: 0 0.2rem 0.5rem 0.475rem rgba(0 , 0 , 0 , 0.75);
 }
 .project .carousel .card .text{
     font-size: 30px;
@@ -412,11 +423,11 @@ section .title::after{
 }
 
 .contact .contact-content .row{
-    background: white;
+    background: rgb(216, 210, 210);
     padding: 20px 79px;;
     border-radius: 20px;
     margin: 50px 30px;
-    border: 7px solid #79d70f;
+    box-shadow: 0.3rem 0.3rem 0.3rem 0.575rem rgba(0,0,0,1.9);;
 }
 
 .contact .contact-content .row .type{
@@ -433,7 +444,8 @@ section .title::after{
     width: 200px;
     object-fit: cover;
     border-radius: 50%;
-    border: 5px solid #222;
+    background: white;
+    box-shadow: 0.2rem 0.2rem 0.3rem 0.275rem rgba(0,0,0,0.85);
 }
 
 .contact .contact-content .row a{
@@ -441,18 +453,18 @@ section .title::after{
     margin-top: 18px;
     display: inline-block;
     background: #79d70f;
-    color: white;
+    color: #79d70f;
     font-size: 21px;
     padding: 13px;
     border-radius: 10px;
-    border: 2px solid #79d70f;
+    box-shadow: 0.3rem 0.3rem 0.3rem 0.05rem rgba(0,0,0,0.7);
     transition: all 0.3s ease;
     margin: 20px 30px;
 }
 
 .contact .contact-content .row a:hover{
-    color: #79d70f;
-    background: none;
+    color: white;
+    background: #222;
     border-color: #79d70f;
 }
 
@@ -472,3 +484,4 @@ footer span{
 footer a{
     color: crimson;
 }
+
